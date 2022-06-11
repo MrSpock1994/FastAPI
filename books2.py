@@ -74,7 +74,6 @@ async def delete_book(book_id: UUID):
     counter = 0
     for x in BOOKS:
         counter += 1
-        #new_books = []
         if x.id == book_id:
             BOOKS.pop(counter - 1)
             return BOOKS
